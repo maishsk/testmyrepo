@@ -8,6 +8,8 @@ ARG PS_VERSION
 ARG PS_PACKAGE=powershell_${PS_VERSION}-1.ubuntu.18.04_amd64.deb
 ARG PS_PACKAGE_URL=https://github.com/PowerShell/PowerShell/releases/download/v${PS_VERSION}/${PS_PACKAGE}
 
+RUN echo this is ${PS_VERSION}
+
 RUN echo ${PS_PACKAGE_URL}
 
 # Download the Linux package and save it
