@@ -6,4 +6,4 @@ services:
   - docker
 
 script:
-  - docker build --build-arg (cat build_versions) .
+  - docker build --build-arg $(cat build_versions) .
