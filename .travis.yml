@@ -1,12 +1,13 @@
 sudo: required
 
-language: ruby
+language: generic
 
 services:
   - docker
 
 before_install:
-- docker pull alpine:latest
+#  - export docker build --build-arg PS_VERSION=6.1.0
+
 
 script:
-- echo "hello world"
+  - echo "hello world"
