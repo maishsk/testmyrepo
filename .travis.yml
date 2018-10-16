@@ -6,5 +6,4 @@ services:
   - docker
 
 script:
-  - export PS_VERSION=$(cat build_versions)
-  - docker build --build-arg PS_VERSION=$PS_VERSION .
+  - docker build --build-arg (cat build_versions) .
