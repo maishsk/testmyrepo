@@ -7,7 +7,7 @@ services:
 
 before_install:
   - VERSION=$(cat build_versions)
-  - PACKAGE=powershell_${version}-1.ubuntu.18.04_amd64.deb
+  - PACKAGE=powershell_${VERSION}-1.ubuntu.18.04_amd64.deb
   - PACKAGE_URL=https://github.com/PowerShell/PowerShell/releases/download/v${VERSION}/${PACKAGE}
   - echo $PACKAGE_URL
 
