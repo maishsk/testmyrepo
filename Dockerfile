@@ -41,7 +41,7 @@ RUN apt-get update \
 
 LABEL maintainer="Maish Saidel-Keesing <https://twitter.com/maishsk>" \
       readme.md="https://github.com/maishsk/AWSPowerShell.NetCore/blob/master/README.md" \
-      description="This Docker image will allow you to run commands with PowerShell against your AWS infrastructure"
-      org.label-schema.version=${PS_VERSION} \
+      description="This Docker image will allow you to run commands with PowerShell against your AWS infrastructure" \
+      org.label-schema.version=${PS_VERSION}
 
 CMD [ "pwsh" ]
