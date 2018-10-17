@@ -9,7 +9,4 @@ before_install:
   - BUILD_VERSION=`cat build_versions`
 
 script:
-#  - echo $version
   - docker build --build-arg PS_VERSION=${BUILD_VERSION} .
-#  - docker build --build-arg PS_VERSION=$(cat build_versions) --build-arg PS_PACKAGE --build-arg PS_PACKAGE_URL .
-#  - docker build .
